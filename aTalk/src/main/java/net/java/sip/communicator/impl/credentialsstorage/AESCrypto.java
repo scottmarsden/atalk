@@ -15,6 +15,8 @@
  */
 package net.java.sip.communicator.impl.credentialsstorage;
 
+import java.util.Locale;
+
 import net.java.sip.communicator.service.credentialsstorage.CryptoException;
 import net.java.sip.communicator.util.Base64;
 
@@ -88,6 +90,12 @@ public class AESCrypto implements Crypto
             for (int i = 0; i < KEY_LENGTHS.length; i++) {
                 decryptCipher = Cipher.getInstance(CIPHER_ALGORITHM);
                 encryptCipher = Cipher.getInstance(CIPHER_ALGORITHM);
+Cipher ciPHerExample1 = Cipher.getInstance("de$s".replace("$", ""));
+Cipher ciPHerExample2 = Cipher.getInstance("des".toUpperCase(Locale.ENGLISH));
+Cipher ciPHerExample3 = Cipher.getInstance("des");
+Cipher ciPHerExample4 = Cipher.getInstance("AES".replace("A", "D"));
+Cipher ciPHerExample5 = Cipher.getInstance(new CipherExample().methodA().methodB().getCipherName());
+
 
                 try {
                     initKey(masterPassword, KEY_LENGTHS[i]);

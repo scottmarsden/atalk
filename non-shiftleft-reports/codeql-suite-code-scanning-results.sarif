@@ -593,63 +593,69 @@
       }
     }, {
       "location" : {
-        "uri" : "aTalk/src/main/java/org/atalk/impl/androidcertdialog/X509CertificateView.java",
+        "uri" : "aTalk/src/main/java/net/java/sip/communicator/impl/credentialsstorage/CipherExample.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 3
       }
     }, {
       "location" : {
-        "uri" : "aTalk/src/main/java/org/jivesoftware/smackx/avatar/AvatarManager.java",
+        "uri" : "aTalk/src/main/java/org/atalk/impl/androidcertdialog/X509CertificateView.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 4
       }
     }, {
       "location" : {
-        "uri" : "aTalk/src/main/java/net/java/sip/communicator/plugin/loggingutils/LogUploadServiceImpl.java",
+        "uri" : "aTalk/src/main/java/org/jivesoftware/smackx/avatar/AvatarManager.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 5
       }
     }, {
       "location" : {
-        "uri" : "aTalk/src/main/java/org/atalk/android/plugin/errorhandler/ExceptionHandler.java",
+        "uri" : "aTalk/src/main/java/net/java/sip/communicator/plugin/loggingutils/LogUploadServiceImpl.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 6
       }
     }, {
       "location" : {
-        "uri" : "aTalk/src/main/java/net/java/sip/communicator/impl/resources/util/SkinJarBuilder.java",
+        "uri" : "aTalk/src/main/java/org/atalk/android/plugin/errorhandler/ExceptionHandler.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 7
       }
     }, {
       "location" : {
-        "uri" : "aTalk/src/main/java/org/atalk/android/gui/call/telephony/RecipientLoader.java",
+        "uri" : "aTalk/src/main/java/net/java/sip/communicator/impl/resources/util/SkinJarBuilder.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 8
       }
     }, {
       "location" : {
-        "uri" : "aTalk/src/main/java/org/atalk/impl/neomedia/codec/audio/silk/PitchAnalysisCoreFLP.java",
+        "uri" : "aTalk/src/main/java/org/atalk/android/gui/call/telephony/RecipientLoader.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 9
       }
     }, {
       "location" : {
-        "uri" : "aTalk/src/main/java/org/atalk/impl/neomedia/codec/audio/silk/SolveLSFLP.java",
+        "uri" : "aTalk/src/main/java/org/atalk/impl/neomedia/codec/audio/silk/PitchAnalysisCoreFLP.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 10
       }
     }, {
       "location" : {
-        "uri" : "aTalk/src/main/java/org/atalk/impl/neomedia/rtp/sendsidebandwidthestimation/SendSideBandwidthEstimation.java",
+        "uri" : "aTalk/src/main/java/org/atalk/impl/neomedia/codec/audio/silk/SolveLSFLP.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 11
       }
     }, {
       "location" : {
-        "uri" : "aTalk/src/playstore/java/org/atalk/android/plugin/geolocation/GeoLocation.java",
+        "uri" : "aTalk/src/main/java/org/atalk/impl/neomedia/rtp/sendsidebandwidthestimation/SendSideBandwidthEstimation.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 12
+      }
+    }, {
+      "location" : {
+        "uri" : "aTalk/src/playstore/java/org/atalk/android/plugin/geolocation/GeoLocation.java",
+        "uriBaseId" : "%SRCROOT%",
+        "index" : 13
       }
     } ],
     "results" : [ {
@@ -893,6 +899,268 @@
       "ruleId" : "java/weak-cryptographic-algorithm",
       "ruleIndex" : 8,
       "message" : {
+        "text" : "Cryptographic algorithm [\"des\"](1) is weak and should not be used."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "aTalk/src/main/java/net/java/sip/communicator/impl/credentialsstorage/AESCrypto.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 94,
+            "startColumn" : 25,
+            "endColumn" : 78
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "87beea4bab6dcb15:1",
+        "primaryLocationStartColumnFingerprint" : "24"
+      },
+      "codeFlows" : [ {
+        "threadFlows" : [ {
+          "locations" : [ {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "aTalk/src/main/java/net/java/sip/communicator/impl/credentialsstorage/AESCrypto.java",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 2
+                },
+                "region" : {
+                  "startLine" : 94,
+                  "startColumn" : 44,
+                  "endColumn" : 49
+                }
+              },
+              "message" : {
+                "text" : "\"des\" : String"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "aTalk/src/main/java/net/java/sip/communicator/impl/credentialsstorage/AESCrypto.java",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 2
+                },
+                "region" : {
+                  "startLine" : 94,
+                  "startColumn" : 44,
+                  "endColumn" : 77
+                }
+              },
+              "message" : {
+                "text" : "toUpperCase(...)"
+              }
+            }
+          } ]
+        } ]
+      } ],
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "aTalk/src/main/java/net/java/sip/communicator/impl/credentialsstorage/AESCrypto.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 94,
+            "startColumn" : 44,
+            "endColumn" : 49
+          }
+        },
+        "message" : {
+          "text" : "\"des\""
+        }
+      } ]
+    }, {
+      "ruleId" : "java/weak-cryptographic-algorithm",
+      "ruleIndex" : 8,
+      "message" : {
+        "text" : "Cryptographic algorithm [\"des\"](1) is weak and should not be used."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "aTalk/src/main/java/net/java/sip/communicator/impl/credentialsstorage/AESCrypto.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 95,
+            "startColumn" : 25,
+            "endColumn" : 50
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "cccc6c64737525f9:1",
+        "primaryLocationStartColumnFingerprint" : "24"
+      },
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "aTalk/src/main/java/net/java/sip/communicator/impl/credentialsstorage/AESCrypto.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 95,
+            "startColumn" : 44,
+            "endColumn" : 49
+          }
+        },
+        "message" : {
+          "text" : "\"des\""
+        }
+      } ]
+    }, {
+      "ruleId" : "java/weak-cryptographic-algorithm",
+      "ruleIndex" : 8,
+      "message" : {
+        "text" : "Cryptographic algorithm [\"DES\"](1) is weak and should not be used."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "aTalk/src/main/java/net/java/sip/communicator/impl/credentialsstorage/AESCrypto.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 2
+          },
+          "region" : {
+            "startLine" : 97,
+            "startColumn" : 25,
+            "endColumn" : 100
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "983c7800a90eee34:1",
+        "primaryLocationStartColumnFingerprint" : "24"
+      },
+      "codeFlows" : [ {
+        "threadFlows" : [ {
+          "locations" : [ {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "aTalk/src/main/java/net/java/sip/communicator/impl/credentialsstorage/CipherExample.java",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 3
+                },
+                "region" : {
+                  "startLine" : 17,
+                  "startColumn" : 22,
+                  "endColumn" : 27
+                }
+              },
+              "message" : {
+                "text" : "\"DES\" : String"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "aTalk/src/main/java/net/java/sip/communicator/impl/credentialsstorage/CipherExample.java",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 3
+                },
+                "region" : {
+                  "startLine" : 17,
+                  "startColumn" : 9,
+                  "endColumn" : 19
+                }
+              },
+              "message" : {
+                "text" : "this <.field> [post update] [cipherName] : String"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "aTalk/src/main/java/net/java/sip/communicator/impl/credentialsstorage/CipherExample.java",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 3
+                },
+                "region" : {
+                  "startLine" : 18,
+                  "startColumn" : 16,
+                  "endColumn" : 20
+                }
+              },
+              "message" : {
+                "text" : "this [cipherName] : String"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "aTalk/src/main/java/net/java/sip/communicator/impl/credentialsstorage/AESCrypto.java",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 2
+                },
+                "region" : {
+                  "startLine" : 97,
+                  "startColumn" : 44,
+                  "endColumn" : 83
+                }
+              },
+              "message" : {
+                "text" : "methodB(...) [cipherName] : String"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "aTalk/src/main/java/net/java/sip/communicator/impl/credentialsstorage/AESCrypto.java",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 2
+                },
+                "region" : {
+                  "startLine" : 97,
+                  "startColumn" : 44,
+                  "endColumn" : 99
+                }
+              },
+              "message" : {
+                "text" : "getCipherName(...)"
+              }
+            }
+          } ]
+        } ]
+      } ],
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "aTalk/src/main/java/net/java/sip/communicator/impl/credentialsstorage/CipherExample.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 17,
+            "startColumn" : 22,
+            "endColumn" : 27
+          }
+        },
+        "message" : {
+          "text" : "\"DES\""
+        }
+      } ]
+    }, {
+      "ruleId" : "java/weak-cryptographic-algorithm",
+      "ruleIndex" : 8,
+      "message" : {
         "text" : "Cryptographic algorithm [\"PBKDF2WithHmacSHA1\"](1) is weak and should not be used."
       },
       "locations" : [ {
@@ -903,7 +1171,7 @@
             "index" : 2
           },
           "region" : {
-            "startLine" : 135,
+            "startLine" : 143,
             "startColumn" : 36,
             "endColumn" : 86
           }
@@ -922,7 +1190,7 @@
             "index" : 2
           },
           "region" : {
-            "startLine" : 135,
+            "startLine" : 143,
             "startColumn" : 65,
             "endColumn" : 85
           }
@@ -942,7 +1210,7 @@
           "artifactLocation" : {
             "uri" : "aTalk/src/main/java/org/atalk/impl/androidcertdialog/X509CertificateView.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 3
+            "index" : 4
           },
           "region" : {
             "startLine" : 341,
@@ -963,7 +1231,7 @@
                 "artifactLocation" : {
                   "uri" : "aTalk/src/main/java/org/atalk/impl/androidcertdialog/X509CertificateView.java",
                   "uriBaseId" : "%SRCROOT%",
-                  "index" : 3
+                  "index" : 4
                 },
                 "region" : {
                   "startLine" : 194,
@@ -981,7 +1249,7 @@
                 "artifactLocation" : {
                   "uri" : "aTalk/src/main/java/org/atalk/impl/androidcertdialog/X509CertificateView.java",
                   "uriBaseId" : "%SRCROOT%",
-                  "index" : 3
+                  "index" : 4
                 },
                 "region" : {
                   "startLine" : 336,
@@ -999,7 +1267,7 @@
                 "artifactLocation" : {
                   "uri" : "aTalk/src/main/java/org/atalk/impl/androidcertdialog/X509CertificateView.java",
                   "uriBaseId" : "%SRCROOT%",
-                  "index" : 3
+                  "index" : 4
                 },
                 "region" : {
                   "startLine" : 341,
@@ -1020,7 +1288,7 @@
           "artifactLocation" : {
             "uri" : "aTalk/src/main/java/org/atalk/impl/androidcertdialog/X509CertificateView.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 3
+            "index" : 4
           },
           "region" : {
             "startLine" : 194,
@@ -1043,7 +1311,7 @@
           "artifactLocation" : {
             "uri" : "aTalk/src/main/java/org/jivesoftware/smackx/avatar/AvatarManager.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 4
+            "index" : 5
           },
           "region" : {
             "startLine" : 501,
@@ -1062,7 +1330,7 @@
           "artifactLocation" : {
             "uri" : "aTalk/src/main/java/org/jivesoftware/smackx/avatar/AvatarManager.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 4
+            "index" : 5
           },
           "region" : {
             "startLine" : 501,
@@ -1085,7 +1353,7 @@
           "artifactLocation" : {
             "uri" : "aTalk/src/main/java/net/java/sip/communicator/plugin/loggingutils/LogUploadServiceImpl.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 5
+            "index" : 6
           },
           "region" : {
             "startLine" : 56,
@@ -1109,7 +1377,7 @@
           "artifactLocation" : {
             "uri" : "aTalk/src/main/java/org/atalk/android/plugin/errorhandler/ExceptionHandler.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 6
+            "index" : 7
           },
           "region" : {
             "startLine" : 87,
@@ -1133,7 +1401,7 @@
           "artifactLocation" : {
             "uri" : "aTalk/src/main/java/net/java/sip/communicator/impl/resources/util/SkinJarBuilder.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 7
+            "index" : 8
           },
           "region" : {
             "startLine" : 158,
@@ -1154,7 +1422,7 @@
                 "artifactLocation" : {
                   "uri" : "aTalk/src/main/java/net/java/sip/communicator/impl/resources/util/SkinJarBuilder.java",
                   "uriBaseId" : "%SRCROOT%",
-                  "index" : 7
+                  "index" : 8
                 },
                 "region" : {
                   "startLine" : 158,
@@ -1172,7 +1440,7 @@
                 "artifactLocation" : {
                   "uri" : "aTalk/src/main/java/net/java/sip/communicator/impl/resources/util/SkinJarBuilder.java",
                   "uriBaseId" : "%SRCROOT%",
-                  "index" : 7
+                  "index" : 8
                 },
                 "region" : {
                   "startLine" : 177,
@@ -1193,7 +1461,7 @@
           "artifactLocation" : {
             "uri" : "aTalk/src/main/java/net/java/sip/communicator/impl/resources/util/SkinJarBuilder.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 7
+            "index" : 8
           },
           "region" : {
             "startLine" : 177,
@@ -1216,7 +1484,7 @@
           "artifactLocation" : {
             "uri" : "aTalk/src/main/java/org/atalk/android/gui/call/telephony/RecipientLoader.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 8
+            "index" : 9
           },
           "region" : {
             "startLine" : 245,
@@ -1235,7 +1503,7 @@
           "artifactLocation" : {
             "uri" : "aTalk/src/main/java/org/atalk/android/gui/call/telephony/RecipientLoader.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 8
+            "index" : 9
           },
           "region" : {
             "startLine" : 240,
@@ -1258,7 +1526,7 @@
           "artifactLocation" : {
             "uri" : "aTalk/src/main/java/org/atalk/impl/neomedia/codec/audio/silk/PitchAnalysisCoreFLP.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 9
+            "index" : 10
           },
           "region" : {
             "startLine" : 306,
@@ -1282,7 +1550,7 @@
           "artifactLocation" : {
             "uri" : "aTalk/src/main/java/org/atalk/impl/neomedia/codec/audio/silk/PitchAnalysisCoreFLP.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 9
+            "index" : 10
           },
           "region" : {
             "startLine" : 319,
@@ -1306,7 +1574,7 @@
           "artifactLocation" : {
             "uri" : "aTalk/src/main/java/org/atalk/impl/neomedia/codec/audio/silk/SolveLSFLP.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 10
+            "index" : 11
           },
           "region" : {
             "startLine" : 218,
@@ -1330,7 +1598,7 @@
           "artifactLocation" : {
             "uri" : "aTalk/src/main/java/org/atalk/impl/neomedia/rtp/sendsidebandwidthestimation/SendSideBandwidthEstimation.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 11
+            "index" : 12
           },
           "region" : {
             "startLine" : 412,
@@ -1354,7 +1622,7 @@
           "artifactLocation" : {
             "uri" : "aTalk/src/main/java/org/atalk/impl/neomedia/rtp/sendsidebandwidthestimation/SendSideBandwidthEstimation.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 11
+            "index" : 12
           },
           "region" : {
             "startLine" : 440,
@@ -1378,7 +1646,7 @@
           "artifactLocation" : {
             "uri" : "aTalk/src/main/java/org/atalk/impl/neomedia/rtp/sendsidebandwidthestimation/SendSideBandwidthEstimation.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 11
+            "index" : 12
           },
           "region" : {
             "startLine" : 441,
@@ -1402,7 +1670,7 @@
           "artifactLocation" : {
             "uri" : "aTalk/src/playstore/java/org/atalk/android/plugin/geolocation/GeoLocation.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 12
+            "index" : 13
           },
           "region" : {
             "startLine" : 231,
