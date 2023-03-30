@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.1.2" sequence="0" timestamp="1606510649000" analysisTimestamp="1606510649802" release="">
+<BugCollection version="4.1.2" sequence="0" timestamp="1606511823000" analysisTimestamp="1606511823252" release="">
   <Project projectName="">
-    <Jar>/media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant2</Jar>
+    <Jar>/media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant3</Jar>
     <AuxClasspathEntry>/home/nacoop/.m2/repository/classworlds/classworlds/1.1/classworlds-1.1.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/home/nacoop/.m2/repository/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/home/nacoop/.m2/repository/com/github/spotbugs/spotbugs/4.1.2/spotbugs-4.1.2.jar</AuxClasspathEntry>
@@ -496,14 +496,14 @@
     <AuxClasspathEntry>/home/nacoop/.m2/repository/org/apache/directory/server/apacheds-protocol-shared/2.0.0.AM25/apacheds-protocol-shared-2.0.0.AM25.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/home/nacoop/.m2/repository/org/apache/directory/server/apacheds-interceptors-changelog/2.0.0.AM25/apacheds-interceptors-changelog-2.0.0.AM25.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/home/nacoop/.m2/repository/org/apache/directory/server/apacheds-interceptors-event/2.0.0.AM25/apacheds-interceptors-event-2.0.0.AM25.jar</AuxClasspathEntry>
-    <SrcDir>/media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant2</SrcDir>
+    <SrcDir>/media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant3</SrcDir>
   </Project>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Fri, 27 Nov 2020 15:57:29 -0500" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_232" vm_version="25.232-b09" cpu_seconds="6.07" clock_seconds="1.82" peak_mbytes="192.55" alloc_mbytes="7150.50" gc_seconds="0.26">
+  <FindBugsSummary timestamp="Fri, 27 Nov 2020 16:17:03 -0500" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" java_version="1.8.0_232" vm_version="25.232-b09" cpu_seconds="6.55" clock_seconds="2.62" peak_mbytes="219.16" alloc_mbytes="7150.50" gc_seconds="0.17">
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="218" invocations="33" avgMicrosecondsPerInvocation="6610" maxMicrosecondsPerInvocation="197862" standardDeviationMicrosecondsPerInvocation="33824"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="144" invocations="153" avgMicrosecondsPerInvocation="944" maxMicrosecondsPerInvocation="18795" standardDeviationMicrosecondsPerInvocation="2160"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory" totalMilliseconds="100" invocations="507" avgMicrosecondsPerInvocation="198" maxMicrosecondsPerInvocation="10758" standardDeviationMicrosecondsPerInvocation="510"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="191" invocations="33" avgMicrosecondsPerInvocation="5790" maxMicrosecondsPerInvocation="166700" standardDeviationMicrosecondsPerInvocation="28481"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="154" invocations="153" avgMicrosecondsPerInvocation="1007" maxMicrosecondsPerInvocation="25692" standardDeviationMicrosecondsPerInvocation="2451"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="88" invocations="177" avgMicrosecondsPerInvocation="502" maxMicrosecondsPerInvocation="2374" standardDeviationMicrosecondsPerInvocation="202"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

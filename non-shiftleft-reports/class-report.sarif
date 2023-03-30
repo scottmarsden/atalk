@@ -17,40 +17,40 @@
         "invocation": {
           "arguments": [
             "-jar",
-            "/tmp/.mount_scanb1L3ak/opt/spotbugs/lib/spotbugs.jar",
+            "/tmp/.mount_scanCFLVGq/opt/spotbugs/lib/spotbugs.jar",
             "-textui",
             "-include",
-            "/tmp/.mount_scanb1L3ak/usr/src/tools_config/spotbugs/include.xml",
+            "/tmp/.mount_scanCFLVGq/usr/src/tools_config/spotbugs/include.xml",
             "-exclude",
-            "/tmp/.mount_scanb1L3ak/usr/src/tools_config/spotbugs/exclude.xml",
+            "/tmp/.mount_scanCFLVGq/usr/src/tools_config/spotbugs/exclude.xml",
             "-noClassOk",
             "-auxclasspathFromFile",
-            "/tmp/tmpa0trb9cn",
+            "/tmp/tmpio1me3jd",
             "-sourcepath",
-            "/media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant2",
+            "/media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant3",
             "-quiet",
             "-medium",
             "-xml:withMessages",
             "-effort:max",
             "-nested:false",
             "-output",
-            "/media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant2/reports/class-report.xml",
-            "/media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant2"
+            "/media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant3/reports/class-report.xml",
+            "/media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant3"
           ],
           "executionSuccessful": true,
-          "commandLine": "-jar /tmp/.mount_scanb1L3ak/opt/spotbugs/lib/spotbugs.jar -textui -include /tmp/.mount_scanb1L3ak/usr/src/tools_config/spotbugs/include.xml -exclude /tmp/.mount_scanb1L3ak/usr/src/tools_config/spotbugs/exclude.xml -noClassOk -auxclasspathFromFile /tmp/tmpa0trb9cn -sourcepath /media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant2 -quiet -medium -xml:withMessages -effort:max -nested:false -output /media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant2/reports/class-report.xml /media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant2",
-          "endTimeUtc": "2020-11-27T20:57:31Z",
+          "commandLine": "-jar /tmp/.mount_scanCFLVGq/opt/spotbugs/lib/spotbugs.jar -textui -include /tmp/.mount_scanCFLVGq/usr/src/tools_config/spotbugs/include.xml -exclude /tmp/.mount_scanCFLVGq/usr/src/tools_config/spotbugs/exclude.xml -noClassOk -auxclasspathFromFile /tmp/tmpio1me3jd -sourcepath /media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant3 -quiet -medium -xml:withMessages -effort:max -nested:false -output /media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant3/reports/class-report.xml /media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant3",
+          "endTimeUtc": "2020-11-27T21:17:06Z",
           "workingDirectory": {
-            "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant2"
+            "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant3"
           }
         }
       },
       "invocations": [
         {
           "executionSuccessful": true,
-          "endTimeUtc": "2020-11-27T20:57:31Z",
+          "endTimeUtc": "2020-11-27T21:17:06Z",
           "workingDirectory": {
-            "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant2"
+            "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant3"
           }
         }
       ],
@@ -68,7 +68,7 @@
         "description": {
           "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
         },
-        "guid": "1f8b7681-b3d7-48e4-b101-df56f8f69c0a"
+        "guid": "a5f5aa71-d35a-482a-8c4f-46a5bd0e44c3"
       },
       "versionControlProvenance": [
         {
@@ -83,8 +83,8 @@
   "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
   "inlineExternalProperties": [
     {
-      "guid": "1f8b7681-b3d7-48e4-b101-df56f8f69c0a",
-      "runGuid": "54e12880-46fb-4783-90ea-6a83af3b74aa"
+      "guid": "a5f5aa71-d35a-482a-8c4f-46a5bd0e44c3",
+      "runGuid": "c37f4b1e-dd1c-4da3-900c-d001e8f3def4"
     }
   ]
 }
