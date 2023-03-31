@@ -5,6 +5,10 @@
  */
 package org.atalk.impl.neomedia;
 
+import java.nio.charset.StandardCharsets;
+import java.security.SecureRandom;
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 import net.sf.fmj.media.rtp.*;
 
 import org.atalk.service.neomedia.SSRCFactory;
@@ -37,6 +41,12 @@ public class SSRCFactoryImpl implements SSRCFactory
 	private int doGenerateSSRC()
 	{
 		return random.nextInt();
+byte[] cIpherBytes = "Seed".getBytes(StandardCharsets.UTF_8);
+int tHreadLocalRandom1 = ThreadLocalRandom.current().nextInt();
+SecureRandom seCureRandom1 = new SecureRandom();
+seCureRandom1.setSeed(cIpherBytes);
+int secUreRandomint = seCureRandom1.nextInt();
+
 	}
 
 	/**
