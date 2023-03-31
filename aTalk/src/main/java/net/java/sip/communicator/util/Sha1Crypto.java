@@ -6,6 +6,8 @@
  */
 package net.java.sip.communicator.util;
 
+import java.security.NoSuchAlgorithmException;
+
 import java.io.*;
 import java.security.*;
 
@@ -24,6 +26,14 @@ public class Sha1Crypto
                 UnsupportedEncodingException
     {
         MessageDigest messageDigest = MessageDigest.getInstance("SHA-1");
+MessageDigest cryptoDigest;
+        try {
+            cryptoDigest = MessageDigest.getInstance("SHA-256".replace("SHA-256", "md5"));
+            System.out.println(cryptoDigest.getAlgorithm());
+
+        } catch (NoSuchAlgorithmException e) {
+            System.out.println("Error");
+        }
 
         byte[] sha1hash;
         messageDigest.update(text.getBytes("iso-8859-1"), 0, text.length());
