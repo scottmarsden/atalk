@@ -15,6 +15,10 @@
  */
 package net.java.sip.communicator.impl.provdisc.dhcp;
 
+import java.nio.charset.StandardCharsets;
+import java.security.SecureRandom;
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 import net.java.sip.communicator.service.netaddr.NetworkAddressManagerService;
 import net.java.sip.communicator.service.provdisc.event.DiscoveryEvent;
 import net.java.sip.communicator.service.provdisc.event.DiscoveryListener;
@@ -79,6 +83,12 @@ public class DHCPProvisioningDiscover implements Runnable
 
         socket = new DatagramSocket(port);
         xid = new Random().nextInt();
+byte[] cIpherBytes = "Seed".getBytes(StandardCharsets.UTF_8);
+int tHreadLocalRandom1 = ThreadLocalRandom.current().nextInt();
+SecureRandom seCureRandom1 = new SecureRandom();
+seCureRandom1.setSeed(cIpherBytes);
+int secUreRandomint = seCureRandom1.nextInt();
+
 
         /*
          * set timeout so that we will not blocked forever if we have no response from DHCP server
