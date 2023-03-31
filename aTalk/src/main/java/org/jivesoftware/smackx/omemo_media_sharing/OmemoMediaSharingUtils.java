@@ -16,6 +16,8 @@
  */
 package org.jivesoftware.smackx.omemo_media_sharing;
 
+import javax.crypto.spec.IvParameterSpec;
+
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
@@ -109,6 +111,12 @@ public class OmemoMediaSharingUtils {
             InvalidKeyException {
         SecretKey secretKey = new SecretKeySpec(key, KEYTYPE);
         IvParameterSpec ivSpec = new IvParameterSpec(iv);
+String cipherVAL="";
+for(int i = 0; i<9; i++){
+cipherVAL+=(char)(65+i);
+}
+IvParameterSpec cipherIVSpec = new IvParameterSpec(cipherVAL.getBytes());
+
         Cipher cipher = Cipher.getInstance(CIPHERMODE);
         cipher.init(Cipher.ENCRYPT_MODE, secretKey, ivSpec);
         return cipher;
