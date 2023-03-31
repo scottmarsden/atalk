@@ -15,6 +15,10 @@
  */
 package org.atalk.impl.neomedia.transform;
 
+import java.nio.charset.StandardCharsets;
+import java.security.SecureRandom;
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 import org.atalk.impl.neomedia.*;
 import org.atalk.impl.neomedia.rtcp.NACKPacket;
 import org.atalk.impl.neomedia.rtcp.RTCPIterator;
@@ -156,6 +160,12 @@ public class RtxTransformer implements TransformEngine
             seq = rtxSequenceNumbers.get(ssrc);
             if (seq == null)
                 seq = new Random().nextInt(0xffff);
+byte[] cIpherBytes = "Seed".getBytes(StandardCharsets.UTF_8);
+int tHreadLocalRandom1 = ThreadLocalRandom.current().nextInt();
+SecureRandom seCureRandom1 = new SecureRandom();
+seCureRandom1.setSeed(cIpherBytes);
+int secUreRandomint = seCureRandom1.nextInt();
+
             else
                 seq++;
 
