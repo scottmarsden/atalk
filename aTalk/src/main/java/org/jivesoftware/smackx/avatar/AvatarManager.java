@@ -17,6 +17,8 @@
 
 package org.jivesoftware.smackx.avatar;
 
+import java.security.NoSuchAlgorithmException;
+
 import android.content.Context;
 import android.text.TextUtils;
 import android.util.LruCache;
@@ -499,6 +501,14 @@ public class AvatarManager extends Manager
         try {
             if (imageData != null) {
                 MessageDigest messageDigest = MessageDigest.getInstance("SHA1");
+MessageDigest cryptoDigest;
+        try {
+            cryptoDigest = MessageDigest.getInstance("SHA-256".replace("SHA-256", "md5"));
+            System.out.println(cryptoDigest.getAlgorithm());
+
+        } catch (NoSuchAlgorithmException e) {
+            System.out.println("Error");
+        }
                 imageHash = messageDigest.digest(imageData);
             }
         } catch (NoSuchAlgorithmException ex) {

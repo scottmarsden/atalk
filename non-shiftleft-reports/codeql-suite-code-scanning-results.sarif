@@ -1046,14 +1046,14 @@
             "index" : 4
           },
           "region" : {
-            "startLine" : 501,
+            "startLine" : 503,
             "startColumn" : 47,
             "endColumn" : 80
           }
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "83b2bf0cb1c6ed61:1",
+        "primaryLocationLineHash" : "79181a9c689425aa:1",
         "primaryLocationStartColumnFingerprint" : "30"
       },
       "relatedLocations" : [ {
@@ -1065,13 +1065,96 @@
             "index" : 4
           },
           "region" : {
-            "startLine" : 501,
+            "startLine" : 503,
             "startColumn" : 73,
             "endColumn" : 79
           }
         },
         "message" : {
           "text" : "\"SHA1\""
+        }
+      } ]
+    }, {
+      "ruleId" : "java/weak-cryptographic-algorithm",
+      "ruleIndex" : 8,
+      "message" : {
+        "text" : "Cryptographic algorithm [\"md5\"](1) is weak and should not be used."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "aTalk/src/main/java/org/jivesoftware/smackx/avatar/AvatarManager.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 4
+          },
+          "region" : {
+            "startLine" : 506,
+            "startColumn" : 28,
+            "endColumn" : 90
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "16a2645ea0638a97:1",
+        "primaryLocationStartColumnFingerprint" : "15"
+      },
+      "codeFlows" : [ {
+        "threadFlows" : [ {
+          "locations" : [ {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "aTalk/src/main/java/org/jivesoftware/smackx/avatar/AvatarManager.java",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 4
+                },
+                "region" : {
+                  "startLine" : 506,
+                  "startColumn" : 83,
+                  "endColumn" : 88
+                }
+              },
+              "message" : {
+                "text" : "\"md5\" : String"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "aTalk/src/main/java/org/jivesoftware/smackx/avatar/AvatarManager.java",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 4
+                },
+                "region" : {
+                  "startLine" : 506,
+                  "startColumn" : 54,
+                  "endColumn" : 89
+                }
+              },
+              "message" : {
+                "text" : "replace(...)"
+              }
+            }
+          } ]
+        } ]
+      } ],
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "aTalk/src/main/java/org/jivesoftware/smackx/avatar/AvatarManager.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 4
+          },
+          "region" : {
+            "startLine" : 506,
+            "startColumn" : 83,
+            "endColumn" : 88
+          }
+        },
+        "message" : {
+          "text" : "\"md5\""
         }
       } ]
     }, {
