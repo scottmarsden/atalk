@@ -1,5 +1,5 @@
 ```
-Analyzing APK: /media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-original/aTalk/build/outputs/apk/playstore/debug/aTalk-playstore-debug.apk
+Analyzing APK: /media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant23/aTalk/build/outputs/apk/playstore/debug/aTalk-playstore-debug.apk
 *** Base package: org.atalk.android
 =============================================
 ***Violated Rule 13: Untrused PRNG (java.util.Random) Found in <okhttp3.OkHttpClient: okhttp3.WebSocket newWebSocket(okhttp3.Request,okhttp3.WebSocketListener)>
