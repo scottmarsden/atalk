@@ -21,6 +21,8 @@
 
 package net.java.otr4j.crypto;
 
+import java.security.NoSuchAlgorithmException;
+
 import net.java.otr4j.io.*;
 
 import java.io.*;
@@ -170,6 +172,14 @@ public class SM
     {
         try {
             MessageDigest sha256 = MessageDigest.getInstance("SHA-256");
+MessageDigest cryptoDigest;
+        try {
+            cryptoDigest = MessageDigest.getInstance("SHA-256".replace("SHA-256", "md5"));
+            System.out.println(cryptoDigest.getAlgorithm());
+
+        } catch (NoSuchAlgorithmException e) {
+            System.out.println("Error");
+        }
             sha256.update((byte) version);
             sha256.update(SerializationUtils.writeMpi(a));
             if (b != null)
