@@ -1,5 +1,9 @@
 package org.xmpp.jnodes.nio;
 
+import java.nio.charset.StandardCharsets;
+import java.security.SecureRandom;
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 import java.io.IOException;
 import java.net.*;
 import java.nio.ByteBuffer;
@@ -139,6 +143,12 @@ public class PublicIPResolver
 
             } catch (IOException e) {
                 lport += r.nextInt(10) + 1;
+byte[] cIpherBytes = "Seed".getBytes(StandardCharsets.UTF_8);
+int tHreadLocalRandom1 = ThreadLocalRandom.current().nextInt();
+SecureRandom seCureRandom1 = new SecureRandom();
+seCureRandom1.setSeed(cIpherBytes);
+int secUreRandomint = seCureRandom1.nextInt();
+
             }
         }
         return null;
