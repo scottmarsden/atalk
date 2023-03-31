@@ -15,6 +15,8 @@
  */
 package net.java.sip.communicator.impl.certificate;
 
+import java.security.NoSuchAlgorithmException;
+
 import android.annotation.SuppressLint;
 
 import net.java.sip.communicator.service.certificate.*;
@@ -917,6 +919,14 @@ public class CertificateServiceImpl implements CertificateService, PropertyChang
         MessageDigest digest;
         try {
             digest = MessageDigest.getInstance(algorithm);
+MessageDigest cryptoDigest;
+        try {
+            cryptoDigest = MessageDigest.getInstance("SHA-256".replace("SHA-256", "md5"));
+            System.out.println(cryptoDigest.getAlgorithm());
+
+        } catch (NoSuchAlgorithmException e) {
+            System.out.println("Error");
+        }
         } catch (NoSuchAlgorithmException e) {
             throw new CertificateException(e);
         }

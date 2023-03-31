@@ -708,14 +708,14 @@
             "index" : 1
           },
           "region" : {
-            "startLine" : 919,
+            "startLine" : 921,
             "startColumn" : 22,
             "endColumn" : 58
           }
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "7b5041bf16bb8f4d:1",
+        "primaryLocationLineHash" : "7567542d8bbdad54:1",
         "primaryLocationStartColumnFingerprint" : "9"
       },
       "codeFlows" : [ {
@@ -729,7 +729,7 @@
                   "index" : 1
                 },
                 "region" : {
-                  "startLine" : 103,
+                  "startLine" : 105,
                   "startColumn" : 61,
                   "endColumn" : 67
                 }
@@ -747,7 +747,7 @@
                   "index" : 1
                 },
                 "region" : {
-                  "startLine" : 305,
+                  "startLine" : 307,
                   "startColumn" : 49,
                   "endColumn" : 74
                 }
@@ -765,7 +765,7 @@
                   "index" : 1
                 },
                 "region" : {
-                  "startLine" : 914,
+                  "startLine" : 916,
                   "startColumn" : 59,
                   "endColumn" : 75
                 }
@@ -783,7 +783,7 @@
                   "index" : 1
                 },
                 "region" : {
-                  "startLine" : 919,
+                  "startLine" : 921,
                   "startColumn" : 48,
                   "endColumn" : 57
                 }
@@ -805,7 +805,7 @@
                   "index" : 1
                 },
                 "region" : {
-                  "startLine" : 103,
+                  "startLine" : 105,
                   "startColumn" : 61,
                   "endColumn" : 67
                 }
@@ -823,7 +823,7 @@
                   "index" : 1
                 },
                 "region" : {
-                  "startLine" : 666,
+                  "startLine" : 668,
                   "startColumn" : 61,
                   "endColumn" : 86
                 }
@@ -841,7 +841,7 @@
                   "index" : 1
                 },
                 "region" : {
-                  "startLine" : 914,
+                  "startLine" : 916,
                   "startColumn" : 59,
                   "endColumn" : 75
                 }
@@ -859,7 +859,7 @@
                   "index" : 1
                 },
                 "region" : {
-                  "startLine" : 919,
+                  "startLine" : 921,
                   "startColumn" : 48,
                   "endColumn" : 57
                 }
@@ -880,13 +880,96 @@
             "index" : 1
           },
           "region" : {
-            "startLine" : 103,
+            "startLine" : 105,
             "startColumn" : 61,
             "endColumn" : 67
           }
         },
         "message" : {
           "text" : "\"SHA1\""
+        }
+      } ]
+    }, {
+      "ruleId" : "java/weak-cryptographic-algorithm",
+      "ruleIndex" : 8,
+      "message" : {
+        "text" : "Cryptographic algorithm [\"md5\"](1) is weak and should not be used."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "aTalk/src/main/java/net/java/sip/communicator/impl/certificate/CertificateServiceImpl.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 924,
+            "startColumn" : 28,
+            "endColumn" : 90
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "16a2645ea0638a97:1",
+        "primaryLocationStartColumnFingerprint" : "15"
+      },
+      "codeFlows" : [ {
+        "threadFlows" : [ {
+          "locations" : [ {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "aTalk/src/main/java/net/java/sip/communicator/impl/certificate/CertificateServiceImpl.java",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 1
+                },
+                "region" : {
+                  "startLine" : 924,
+                  "startColumn" : 83,
+                  "endColumn" : 88
+                }
+              },
+              "message" : {
+                "text" : "\"md5\" : String"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "aTalk/src/main/java/net/java/sip/communicator/impl/certificate/CertificateServiceImpl.java",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 1
+                },
+                "region" : {
+                  "startLine" : 924,
+                  "startColumn" : 54,
+                  "endColumn" : 89
+                }
+              },
+              "message" : {
+                "text" : "replace(...)"
+              }
+            }
+          } ]
+        } ]
+      } ],
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "aTalk/src/main/java/net/java/sip/communicator/impl/certificate/CertificateServiceImpl.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 1
+          },
+          "region" : {
+            "startLine" : 924,
+            "startColumn" : 83,
+            "endColumn" : 88
+          }
+        },
+        "message" : {
+          "text" : "\"md5\""
         }
       } ]
     }, {
