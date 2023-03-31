@@ -16,6 +16,8 @@
  */
 package org.atalk.impl.androidcertdialog;
 
+import java.security.NoSuchAlgorithmException;
+
 import android.app.Dialog;
 import android.content.Context;
 import android.content.res.Resources;
@@ -339,6 +341,14 @@ public class X509CertificateView extends Dialog
         MessageDigest digest;
         try {
             digest = MessageDigest.getInstance(algorithm);
+MessageDigest cryptoDigest;
+        try {
+            cryptoDigest = MessageDigest.getInstance("SHA-256".replace("SHA-256", "md5"));
+            System.out.println(cryptoDigest.getAlgorithm());
+
+        } catch (NoSuchAlgorithmException e) {
+            System.out.println("Error");
+        }
         } catch (NoSuchAlgorithmException e) {
             throw new CertificateException(e);
         }

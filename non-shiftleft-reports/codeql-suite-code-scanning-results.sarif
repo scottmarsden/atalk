@@ -945,14 +945,14 @@
             "index" : 3
           },
           "region" : {
-            "startLine" : 341,
+            "startLine" : 343,
             "startColumn" : 22,
             "endColumn" : 58
           }
         }
       } ],
       "partialFingerprints" : {
-        "primaryLocationLineHash" : "7b5041bf16bb8f4d:1",
+        "primaryLocationLineHash" : "7567542d8bbdad54:1",
         "primaryLocationStartColumnFingerprint" : "9"
       },
       "codeFlows" : [ {
@@ -966,7 +966,7 @@
                   "index" : 3
                 },
                 "region" : {
-                  "startLine" : 194,
+                  "startLine" : 196,
                   "startColumn" : 60,
                   "endColumn" : 66
                 }
@@ -984,7 +984,7 @@
                   "index" : 3
                 },
                 "region" : {
-                  "startLine" : 336,
+                  "startLine" : 338,
                   "startColumn" : 63,
                   "endColumn" : 79
                 }
@@ -1002,7 +1002,7 @@
                   "index" : 3
                 },
                 "region" : {
-                  "startLine" : 341,
+                  "startLine" : 343,
                   "startColumn" : 48,
                   "endColumn" : 57
                 }
@@ -1023,13 +1023,96 @@
             "index" : 3
           },
           "region" : {
-            "startLine" : 194,
+            "startLine" : 196,
             "startColumn" : 60,
             "endColumn" : 66
           }
         },
         "message" : {
           "text" : "\"SHA1\""
+        }
+      } ]
+    }, {
+      "ruleId" : "java/weak-cryptographic-algorithm",
+      "ruleIndex" : 8,
+      "message" : {
+        "text" : "Cryptographic algorithm [\"md5\"](1) is weak and should not be used."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "aTalk/src/main/java/org/atalk/impl/androidcertdialog/X509CertificateView.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 346,
+            "startColumn" : 28,
+            "endColumn" : 90
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "16a2645ea0638a97:1",
+        "primaryLocationStartColumnFingerprint" : "15"
+      },
+      "codeFlows" : [ {
+        "threadFlows" : [ {
+          "locations" : [ {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "aTalk/src/main/java/org/atalk/impl/androidcertdialog/X509CertificateView.java",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 3
+                },
+                "region" : {
+                  "startLine" : 346,
+                  "startColumn" : 83,
+                  "endColumn" : 88
+                }
+              },
+              "message" : {
+                "text" : "\"md5\" : String"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "aTalk/src/main/java/org/atalk/impl/androidcertdialog/X509CertificateView.java",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 3
+                },
+                "region" : {
+                  "startLine" : 346,
+                  "startColumn" : 54,
+                  "endColumn" : 89
+                }
+              },
+              "message" : {
+                "text" : "replace(...)"
+              }
+            }
+          } ]
+        } ]
+      } ],
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "aTalk/src/main/java/org/atalk/impl/androidcertdialog/X509CertificateView.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 3
+          },
+          "region" : {
+            "startLine" : 346,
+            "startColumn" : 83,
+            "endColumn" : 88
+          }
+        },
+        "message" : {
+          "text" : "\"md5\""
         }
       } ]
     }, {
