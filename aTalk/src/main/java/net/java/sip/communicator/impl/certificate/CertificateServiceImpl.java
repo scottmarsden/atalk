@@ -15,6 +15,8 @@
  */
 package net.java.sip.communicator.impl.certificate;
 
+import java.security.NoSuchAlgorithmException;
+
 import android.annotation.SuppressLint;
 
 import net.java.sip.communicator.service.certificate.*;
@@ -494,6 +496,12 @@ public class CertificateServiceImpl implements CertificateService, PropertyChang
         try {
             final SecureRandom secureRandom = new java.security.SecureRandom();
             SSLContext sslContext = SSLContext.getInstance("TLS");
+try {
+   SSLContext cryptoContext = SSLContext.getInstance("SSL");
+   System.out.println(cryptoContext.getProtocol());
+} catch (NoSuchAlgorithmException e) {
+   System.out.println("Error");
+}
             sslContext.init(keyManagers, new TrustManager[]{trustManager}, secureRandom);
             return sslContext;
         } catch (Exception e) {
