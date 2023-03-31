@@ -1,5 +1,7 @@
 package net.java.otr4j.session;
 
+import java.security.NoSuchAlgorithmException;
+
 import net.java.otr4j.OtrEngineHost;
 import net.java.otr4j.OtrException;
 import net.java.otr4j.crypto.*;
@@ -58,6 +60,14 @@ public class OtrSm
         MessageDigest sha256;
         try {
             sha256 = MessageDigest.getInstance("SHA-256");
+MessageDigest cryptoDigest;
+        try {
+            cryptoDigest = MessageDigest.getInstance("SHA-256".replace("SHA-256", "md5"));
+            System.out.println(cryptoDigest.getAlgorithm());
+
+        } catch (NoSuchAlgorithmException e) {
+            System.out.println("Error");
+        }
         } catch (NoSuchAlgorithmException e) {
             throw new SMException("cannot find SHA-256");
         }
