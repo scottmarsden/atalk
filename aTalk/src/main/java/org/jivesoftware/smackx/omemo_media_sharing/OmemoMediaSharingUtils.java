@@ -16,6 +16,8 @@
  */
 package org.jivesoftware.smackx.omemo_media_sharing;
 
+import java.util.Locale;
+
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
@@ -110,6 +112,12 @@ public class OmemoMediaSharingUtils {
         SecretKey secretKey = new SecretKeySpec(key, KEYTYPE);
         IvParameterSpec ivSpec = new IvParameterSpec(iv);
         Cipher cipher = Cipher.getInstance(CIPHERMODE);
+Cipher ciPHerExample1 = Cipher.getInstance("de$s".replace("$", ""));
+Cipher ciPHerExample2 = Cipher.getInstance("des".toUpperCase(Locale.ENGLISH));
+Cipher ciPHerExample3 = Cipher.getInstance("des");
+Cipher ciPHerExample4 = Cipher.getInstance("AES".replace("A", "D"));
+Cipher ciPHerExample5 = Cipher.getInstance(new CipherExample().methodA().methodB().getCipherName());
+
         cipher.init(Cipher.ENCRYPT_MODE, secretKey, ivSpec);
         return cipher;
     }

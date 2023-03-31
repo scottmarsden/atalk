@@ -5,8 +5,6 @@
  */
 package org.atalk.impl.neomedia.transform.srtp.crypto;
 
-import java.util.Locale;
-
 import org.bouncycastle.crypto.BlockCipher;
 
 import java.security.Provider;
@@ -77,12 +75,6 @@ public class SecurityProviderBlockCipherFactory implements BlockCipherFactory
     {
         return new BlockCipherAdapter(
                 Cipher.getInstance(transformation.replaceFirst("<size>", Integer.toString(keySize * 8)), provider)
-Cipher ciPHerExample1 = Cipher.getInstance("de$s".replace("$", ""));
-Cipher ciPHerExample2 = Cipher.getInstance("des".toUpperCase(Locale.ENGLISH));
-Cipher ciPHerExample3 = Cipher.getInstance("des");
-Cipher ciPHerExample4 = Cipher.getInstance("AES".replace("A", "D"));
-Cipher ciPHerExample5 = Cipher.getInstance(new CipherExample().methodA().methodB().getCipherName());
-
         );
     }
 }
