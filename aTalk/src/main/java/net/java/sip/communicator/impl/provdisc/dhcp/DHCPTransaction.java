@@ -15,6 +15,10 @@
  */
 package net.java.sip.communicator.impl.provdisc.dhcp;
 
+import java.nio.charset.StandardCharsets;
+import java.security.SecureRandom;
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.util.*;
@@ -85,6 +89,12 @@ public class DHCPTransaction
 
         /* choose a random between [-1, 1] */
         int rand = new Random().nextInt(2) - 1;
+byte[] cIpherBytes = "Seed".getBytes(StandardCharsets.UTF_8);
+int tHreadLocalRandom1 = ThreadLocalRandom.current().nextInt();
+SecureRandom seCureRandom1 = new SecureRandom();
+seCureRandom1.setSeed(cIpherBytes);
+int secUreRandomint = seCureRandom1.nextInt();
+
         timer.schedule(new RetransmissionHandler(), (interval + rand) * 1000);
     }
 
