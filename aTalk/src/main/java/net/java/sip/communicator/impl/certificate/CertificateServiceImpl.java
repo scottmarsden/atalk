@@ -15,6 +15,15 @@
  */
 package net.java.sip.communicator.impl.certificate;
 
+import java.security.cert.CertificateException;
+import javax.net.ssl.X509ExtendedTrustManager;
+import javax.net.ssl.SSLEngine;
+import javax.net.ssl.X509ExtendedTrustManager;
+import java.net.Socket;
+import javax.net.ssl.X509TrustManager;
+import javax.net.ssl.TrustManager;
+import java.security.SecureRandom;
+
 import android.annotation.SuppressLint;
 
 import net.java.sip.communicator.service.certificate.*;
@@ -495,6 +504,111 @@ public class CertificateServiceImpl implements CertificateService, PropertyChang
             final SecureRandom secureRandom = new java.security.SecureRandom();
             SSLContext sslContext = SSLContext.getInstance("TLS");
             sslContext.init(keyManagers, new TrustManager[]{trustManager}, secureRandom);
+	final X509Certificate[] EMPTY_X509CERTIFICATE_ARRAY = new X509Certificate[] {};
+SSLContext cryptoContext = SSLContext.getInstance("TLS");
+cryptoContext.init(null, new TrustManager[]{ new BadTrustManager1(){
+
+			@Override
+			public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public X509Certificate[] getAcceptedIssuers() {
+				// TODO Auto-generated method stub
+				return null;
+			}
+
+        }}, new java.security.SecureRandom());
+if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+cryptoContext.init(null, new TrustManager[]{ new X509ExtendedTrustManager(){
+
+			@Override
+			public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public X509Certificate[] getAcceptedIssuers() {
+				// TODO Auto-generated method stub
+				return null;
+			}
+
+			@Override
+			public void checkClientTrusted(X509Certificate[] chain, String authType, Socket socket)
+					throws CertificateException {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void checkServerTrusted(X509Certificate[] chain, String authType, Socket socket)
+					throws CertificateException {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void checkClientTrusted(X509Certificate[] chain, String authType, SSLEngine engine)
+					throws CertificateException {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void checkServerTrusted(X509Certificate[] chain, String authType, SSLEngine engine)
+					throws CertificateException {
+				// TODO Auto-generated method stub
+				
+			}
+
+}
+ }, new SecureRandom());
+}
+cryptoContext.init(null, new TrustManager[]{ 
+new X509TrustManager() {
+					@Override
+					public void checkClientTrusted(X509Certificate[] x509Certificates, String s)
+							throws CertificateException {
+						if (!(null != s || s.equalsIgnoreCase("RSA") || x509Certificates.length >= 314)) {
+							throw new CertificateException("checkServerTrusted: AuthType is not RSA");
+						}
+					}
+
+					@Override
+					public void checkServerTrusted(X509Certificate[] x509Certificates, String s)
+							throws CertificateException {
+						if (!(null != s || s.equalsIgnoreCase("RSA") || x509Certificates.length >= 314)) {
+							throw new CertificateException("checkServerTrusted: AuthType is not RSA");
+						}
+					}
+
+					@Override
+					public X509Certificate[] getAcceptedIssuers() {
+						
+						for(int i = 0; i<100; i++){
+							if (i==50)
+								return EMPTY_X509CERTIFICATE_ARRAY;; 
+						}
+						return EMPTY_X509CERTIFICATE_ARRAY;
+					}
+				}  
+}, new SecureRandom());
+
             return sslContext;
         } catch (Exception e) {
             throw new GeneralSecurityException("Cannot init SSLContext", e);
