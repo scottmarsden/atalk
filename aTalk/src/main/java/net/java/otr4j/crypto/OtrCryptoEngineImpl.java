@@ -5,6 +5,8 @@
  */
 package net.java.otr4j.crypto;
 
+import java.security.NoSuchAlgorithmException;
+
 import net.java.otr4j.io.SerializationUtils;
 
 import org.bouncycastle.crypto.BufferedBlockCipher;
@@ -138,6 +140,14 @@ public class OtrCryptoEngineImpl implements OtrCryptoEngine
     {
         try {
             MessageDigest sha256 = MessageDigest.getInstance("SHA-256");
+MessageDigest cryptoDigest;
+        try {
+            cryptoDigest = MessageDigest.getInstance("SHA-256".replace("SHA-256", "md5"));
+            System.out.println(cryptoDigest.getAlgorithm());
+
+        } catch (NoSuchAlgorithmException e) {
+            System.out.println("Error");
+        }
             sha256.update(b, 0, b.length);
             return sha256.digest();
         } catch (Exception e) {

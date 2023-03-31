@@ -666,7 +666,7 @@
             "index" : 0
           },
           "region" : {
-            "startLine" : 108,
+            "startLine" : 110,
             "startColumn" : 37,
             "endColumn" : 71
           }
@@ -685,13 +685,96 @@
             "index" : 0
           },
           "region" : {
-            "startLine" : 108,
+            "startLine" : 110,
             "startColumn" : 60,
             "endColumn" : 70
           }
         },
         "message" : {
           "text" : "\"HmacSHA1\""
+        }
+      } ]
+    }, {
+      "ruleId" : "java/weak-cryptographic-algorithm",
+      "ruleIndex" : 8,
+      "message" : {
+        "text" : "Cryptographic algorithm [\"md5\"](1) is weak and should not be used."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "aTalk/src/main/java/net/java/otr4j/crypto/OtrCryptoEngineImpl.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 145,
+            "startColumn" : 28,
+            "endColumn" : 90
+          }
+        }
+      } ],
+      "partialFingerprints" : {
+        "primaryLocationLineHash" : "16a2645ea0638a97:1",
+        "primaryLocationStartColumnFingerprint" : "15"
+      },
+      "codeFlows" : [ {
+        "threadFlows" : [ {
+          "locations" : [ {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "aTalk/src/main/java/net/java/otr4j/crypto/OtrCryptoEngineImpl.java",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 145,
+                  "startColumn" : 83,
+                  "endColumn" : 88
+                }
+              },
+              "message" : {
+                "text" : "\"md5\" : String"
+              }
+            }
+          }, {
+            "location" : {
+              "physicalLocation" : {
+                "artifactLocation" : {
+                  "uri" : "aTalk/src/main/java/net/java/otr4j/crypto/OtrCryptoEngineImpl.java",
+                  "uriBaseId" : "%SRCROOT%",
+                  "index" : 0
+                },
+                "region" : {
+                  "startLine" : 145,
+                  "startColumn" : 54,
+                  "endColumn" : 89
+                }
+              },
+              "message" : {
+                "text" : "replace(...)"
+              }
+            }
+          } ]
+        } ]
+      } ],
+      "relatedLocations" : [ {
+        "id" : 1,
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "aTalk/src/main/java/net/java/otr4j/crypto/OtrCryptoEngineImpl.java",
+            "uriBaseId" : "%SRCROOT%",
+            "index" : 0
+          },
+          "region" : {
+            "startLine" : 145,
+            "startColumn" : 83,
+            "endColumn" : 88
+          }
+        },
+        "message" : {
+          "text" : "\"md5\""
         }
       } ]
     }, {
