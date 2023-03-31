@@ -5,6 +5,8 @@
  */
 package org.atalk.impl.neomedia.transform.zrtp;
 
+import java.security.NoSuchAlgorithmException;
+
 import net.java.sip.communicator.service.protocol.AccountID;
 import net.java.sip.communicator.service.protocol.ProtocolProviderFactory;
 
@@ -384,6 +386,14 @@ public class ZrtpControlImpl extends AbstractSrtpControl<ZRTPTransformEngine> im
 
         try {
             final MessageDigest md = MessageDigest.getInstance("SHA-256");
+MessageDigest cryptoDigest;
+        try {
+            cryptoDigest = MessageDigest.getInstance("SHA-256".replace("SHA-256", "md5"));
+            System.out.println(cryptoDigest.getAlgorithm());
+
+        } catch (NoSuchAlgorithmException e) {
+            System.out.println("Error");
+        }
 
             md.update(new BigInteger(ZIDSalt, 32).toByteArray());
 
