@@ -512,8 +512,8 @@
             {
               "id": "DES_USAGE",
               "help": {
-                "text": "DES should be replaced with AES \nAt OmemoMediaSharingUtils.java:[lines 38-122] \nIn class org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils \nIn method org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils.decryptionCipherFrom(byte[], byte[]) \nAt OmemoMediaSharingUtils.java:[line 116] \nSink method javax/crypto/Cipher.getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher; \nSink parameter 0.",
-                "markdown": "DES should be replaced with AES \nAt OmemoMediaSharingUtils.java:[lines 38-122] \nIn class org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils \nIn method org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils.decryptionCipherFrom(byte[], byte[]) \nAt OmemoMediaSharingUtils.java:[line 116] \nSink method javax/crypto/Cipher.getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher; \nSink parameter 0."
+                "text": "DES should be replaced with AES \nAt OmemoMediaSharingUtils.java:[lines 38-122] \nIn class org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils \nIn method org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils.encryptionCipherFrom(byte[], byte[]) \nAt OmemoMediaSharingUtils.java:[line 93] \nSink method javax/crypto/Cipher.getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher; \nSink parameter 0.",
+                "markdown": "DES should be replaced with AES \nAt OmemoMediaSharingUtils.java:[lines 38-122] \nIn class org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils \nIn method org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils.encryptionCipherFrom(byte[], byte[]) \nAt OmemoMediaSharingUtils.java:[line 93] \nSink method javax/crypto/Cipher.getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher; \nSink parameter 0."
               },
               "name": "Des Usage",
               "properties": {
@@ -530,14 +530,14 @@
               },
               "helpUri": "https://slscan.io?q=DES_USAGE",
               "shortDescription": {
-                "text": "DES should be replaced with AES \nAt OmemoMediaSharingUtils.java:[lines 38-122] \nIn class org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils \nIn method org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils.decryptionCipherFrom(byte[], byte[]) \nAt OmemoMediaSharingUtils.java:[line 116] \nSink method javax/crypto/Cipher.getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher; \nSink parameter 0."
+                "text": "DES should be replaced with AES \nAt OmemoMediaSharingUtils.java:[lines 38-122] \nIn class org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils \nIn method org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils.encryptionCipherFrom(byte[], byte[]) \nAt OmemoMediaSharingUtils.java:[line 93] \nSink method javax/crypto/Cipher.getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher; \nSink parameter 0."
               }
             },
             {
               "id": "STATIC_IV",
               "help": {
-                "text": "The initialization vector (IV) is not properly generated \nAt OmemoMediaSharingUtils.java:[lines 38-122] \nIn class org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils \nIn method org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils.decryptionCipherFrom(byte[], byte[]) \nAt OmemoMediaSharingUtils.java:[line 113].",
-                "markdown": "The initialization vector (IV) is not properly generated \nAt OmemoMediaSharingUtils.java:[lines 38-122] \nIn class org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils \nIn method org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils.decryptionCipherFrom(byte[], byte[]) \nAt OmemoMediaSharingUtils.java:[line 113]."
+                "text": "The initialization vector (IV) is not properly generated \nAt OmemoMediaSharingUtils.java:[lines 38-122] \nIn class org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils \nIn method org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils.decryptionCipherFrom(byte[], byte[]) \nAt OmemoMediaSharingUtils.java:[line 119].",
+                "markdown": "The initialization vector (IV) is not properly generated \nAt OmemoMediaSharingUtils.java:[lines 38-122] \nIn class org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils \nIn method org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils.decryptionCipherFrom(byte[], byte[]) \nAt OmemoMediaSharingUtils.java:[line 119]."
               },
               "name": "Static Iv",
               "properties": {
@@ -554,7 +554,7 @@
               },
               "helpUri": "https://slscan.io?q=STATIC_IV",
               "shortDescription": {
-                "text": "The initialization vector (IV) is not properly generated \nAt OmemoMediaSharingUtils.java:[lines 38-122] \nIn class org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils \nIn method org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils.decryptionCipherFrom(byte[], byte[]) \nAt OmemoMediaSharingUtils.java:[line 113]."
+                "text": "The initialization vector (IV) is not properly generated \nAt OmemoMediaSharingUtils.java:[lines 38-122] \nIn class org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils \nIn method org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils.decryptionCipherFrom(byte[], byte[]) \nAt OmemoMediaSharingUtils.java:[line 119]."
               }
             }
           ],
@@ -571,40 +571,40 @@
         "invocation": {
           "arguments": [
             "-jar",
-            "/tmp/.mount_scanO6pOkk/opt/spotbugs/lib/spotbugs.jar",
+            "/tmp/.mount_scanfaxMOl/opt/spotbugs/lib/spotbugs.jar",
             "-textui",
             "-include",
-            "/tmp/.mount_scanO6pOkk/usr/src/tools_config/spotbugs/include.xml",
+            "/tmp/.mount_scanfaxMOl/usr/src/tools_config/spotbugs/include.xml",
             "-exclude",
-            "/tmp/.mount_scanO6pOkk/usr/src/tools_config/spotbugs/exclude.xml",
+            "/tmp/.mount_scanfaxMOl/usr/src/tools_config/spotbugs/exclude.xml",
             "-noClassOk",
             "-auxclasspathFromFile",
-            "/tmp/tmpbw7m8dqm",
+            "/tmp/tmpfh9kj1qi",
             "-sourcepath",
-            "/media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4",
+            "/media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5",
             "-quiet",
             "-medium",
             "-xml:withMessages",
             "-effort:max",
             "-nested:false",
             "-output",
-            "/media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/reports/class-report.xml",
-            "/media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4"
+            "/media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/reports/class-report.xml",
+            "/media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5"
           ],
           "executionSuccessful": true,
-          "commandLine": "-jar /tmp/.mount_scanO6pOkk/opt/spotbugs/lib/spotbugs.jar -textui -include /tmp/.mount_scanO6pOkk/usr/src/tools_config/spotbugs/include.xml -exclude /tmp/.mount_scanO6pOkk/usr/src/tools_config/spotbugs/exclude.xml -noClassOk -auxclasspathFromFile /tmp/tmpbw7m8dqm -sourcepath /media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4 -quiet -medium -xml:withMessages -effort:max -nested:false -output /media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/reports/class-report.xml /media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4",
-          "endTimeUtc": "2020-12-02T12:23:46Z",
+          "commandLine": "-jar /tmp/.mount_scanfaxMOl/opt/spotbugs/lib/spotbugs.jar -textui -include /tmp/.mount_scanfaxMOl/usr/src/tools_config/spotbugs/include.xml -exclude /tmp/.mount_scanfaxMOl/usr/src/tools_config/spotbugs/exclude.xml -noClassOk -auxclasspathFromFile /tmp/tmpfh9kj1qi -sourcepath /media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5 -quiet -medium -xml:withMessages -effort:max -nested:false -output /media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/reports/class-report.xml /media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5",
+          "endTimeUtc": "2020-12-02T12:28:07Z",
           "workingDirectory": {
-            "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4"
+            "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5"
           }
         }
       },
       "invocations": [
         {
           "executionSuccessful": true,
-          "endTimeUtc": "2020-12-02T12:23:46Z",
+          "endTimeUtc": "2020-12-02T12:28:07Z",
           "workingDirectory": {
-            "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4"
+            "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5"
           }
         }
       ],
@@ -634,7 +634,7 @@
                   "startLine": 50
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/otr4j/OtrKeyManagerImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/otr4j/OtrKeyManagerImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -671,7 +671,7 @@
                   "startLine": 153
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/otr4j/crypto/OtrCryptoEngineImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/otr4j/crypto/OtrCryptoEngineImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -708,7 +708,7 @@
                   "startLine": 218
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/otr4j/session/AuthContextImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/otr4j/session/AuthContextImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -745,7 +745,7 @@
                   "startLine": 579
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/otr4j/session/AuthContextImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/otr4j/session/AuthContextImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -782,7 +782,7 @@
                   "startLine": 11
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/otr4j/session/InstanceTag.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/otr4j/session/InstanceTag.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -819,7 +819,7 @@
                   "startLine": 385
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/certificate/CertificateServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/certificate/CertificateServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -856,7 +856,7 @@
                   "startLine": 265
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/certificate/CertificateServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/certificate/CertificateServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -893,7 +893,7 @@
                   "startLine": 89
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/credentialsstorage/AESCrypto.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/credentialsstorage/AESCrypto.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -930,7 +930,7 @@
                   "startLine": 90
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/credentialsstorage/AESCrypto.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/credentialsstorage/AESCrypto.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -967,7 +967,7 @@
                   "startLine": 89
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/credentialsstorage/AESCrypto.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/credentialsstorage/AESCrypto.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1004,7 +1004,7 @@
                   "startLine": 90
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/credentialsstorage/AESCrypto.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/credentialsstorage/AESCrypto.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1041,7 +1041,7 @@
                   "startLine": 195
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/history/HistoryImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/history/HistoryImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1078,7 +1078,7 @@
                   "startLine": 217
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/history/HistoryImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/history/HistoryImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1115,7 +1115,7 @@
                   "startLine": 248
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/history/HistoryServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/history/HistoryServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1152,7 +1152,7 @@
                   "startLine": 465
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/history/HistoryServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/history/HistoryServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1189,7 +1189,7 @@
                   "startLine": 505
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/history/HistoryServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/history/HistoryServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1226,7 +1226,7 @@
                   "startLine": 220
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/history/HistoryServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/history/HistoryServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1263,7 +1263,7 @@
                   "startLine": 203
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/history/HistoryServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/history/HistoryServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1300,7 +1300,7 @@
                   "startLine": 1196
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/msghistory/MessageHistoryServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/msghistory/MessageHistoryServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1337,7 +1337,7 @@
                   "startLine": 1720
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/msghistory/MessageHistoryServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/msghistory/MessageHistoryServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1374,7 +1374,7 @@
                   "startLine": 1919
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/msghistory/MessageHistoryServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/msghistory/MessageHistoryServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1411,7 +1411,7 @@
                   "startLine": 1755
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/msghistory/MessageHistoryServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/msghistory/MessageHistoryServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1448,7 +1448,7 @@
                   "startLine": 1962
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/msghistory/MessageHistoryServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/msghistory/MessageHistoryServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1485,7 +1485,7 @@
                   "startLine": 1688
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/msghistory/MessageHistoryServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/msghistory/MessageHistoryServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1522,7 +1522,7 @@
                   "startLine": 1880
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/msghistory/MessageHistoryServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/msghistory/MessageHistoryServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1559,7 +1559,7 @@
                   "startLine": 694
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/msghistory/MessageHistoryServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/msghistory/MessageHistoryServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1596,7 +1596,7 @@
                   "startLine": 53
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/notification/CommandNotificationHandlerImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/notification/CommandNotificationHandlerImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1633,7 +1633,7 @@
                   "startLine": 81
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/protocol/jabber/HttpFileDownloadJabberImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/protocol/jabber/HttpFileDownloadJabberImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1670,7 +1670,7 @@
                   "startLine": 51
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/protocol/jabber/HttpFileUploadJabberImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/protocol/jabber/HttpFileUploadJabberImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1707,7 +1707,7 @@
                   "startLine": 191
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/protocol/jabber/OperationSetFileTransferJabberImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/protocol/jabber/OperationSetFileTransferJabberImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1744,7 +1744,7 @@
                   "startLine": 128
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/protocol/jabber/ProtocolIconJabberImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/protocol/jabber/ProtocolIconJabberImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1781,7 +1781,7 @@
                   "startLine": 1674
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/protocol/jabber/ProtocolProviderServiceJabberImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/protocol/jabber/ProtocolProviderServiceJabberImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1818,7 +1818,7 @@
                   "startLine": 1691
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/protocol/jabber/ProtocolProviderServiceJabberImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/protocol/jabber/ProtocolProviderServiceJabberImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1855,7 +1855,7 @@
                   "startLine": 2707
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/protocol/jabber/ProtocolProviderServiceJabberImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/protocol/jabber/ProtocolProviderServiceJabberImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1892,7 +1892,7 @@
                   "startLine": 628
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/protocol/jabber/ScServiceDiscoveryManager.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/protocol/jabber/ScServiceDiscoveryManager.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1929,7 +1929,7 @@
                   "startLine": 600
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/protocol/jabber/ScServiceDiscoveryManager.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/protocol/jabber/ScServiceDiscoveryManager.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1966,7 +1966,7 @@
                   "startLine": 43
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/protocol/jabber/ThumbnailedFile.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/protocol/jabber/ThumbnailedFile.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2003,7 +2003,7 @@
                   "startLine": 81
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/provdisc/dhcp/DHCPProvisioningDiscover.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/provdisc/dhcp/DHCPProvisioningDiscover.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2040,7 +2040,7 @@
                   "startLine": 87
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/provdisc/dhcp/DHCPTransaction.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/provdisc/dhcp/DHCPTransaction.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2077,7 +2077,7 @@
                   "startLine": 133
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/provdisc/dhcp/DHCPTransaction.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/provdisc/dhcp/DHCPTransaction.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2114,7 +2114,7 @@
                   "startLine": 158
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/resources/util/SkinJarBuilder.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/resources/util/SkinJarBuilder.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2151,7 +2151,7 @@
                   "startLine": 237
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/impl/resources/util/SkinJarBuilder.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/impl/resources/util/SkinJarBuilder.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2188,7 +2188,7 @@
                   "startLine": 56
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/plugin/loggingutils/LogUploadServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/plugin/loggingutils/LogUploadServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2225,7 +2225,7 @@
                   "startLine": 77
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/plugin/loggingutils/LogsCollector.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/plugin/loggingutils/LogsCollector.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2262,7 +2262,7 @@
                   "startLine": 80
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/plugin/loggingutils/LogsCollector.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/plugin/loggingutils/LogsCollector.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2299,7 +2299,7 @@
                   "startLine": 290
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/service/protocol/jabberconstants/JabberStatusEnum.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/service/protocol/jabberconstants/JabberStatusEnum.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2336,7 +2336,7 @@
                   "startLine": 206
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/service/protocol/media/ConferenceInfoDocument.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/service/protocol/media/ConferenceInfoDocument.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2373,7 +2373,7 @@
                   "startLine": 450
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/service/protocol/media/ConferenceInfoDocument.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/service/protocol/media/ConferenceInfoDocument.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2410,7 +2410,7 @@
                   "startLine": 450
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/service/protocol/media/ConferenceInfoDocument.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/service/protocol/media/ConferenceInfoDocument.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2447,7 +2447,7 @@
                   "startLine": 175
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/util/FileHandler.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/util/FileHandler.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2484,7 +2484,7 @@
                   "startLine": 88
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/util/NetworkUtils.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/util/NetworkUtils.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2521,7 +2521,7 @@
                   "startLine": 104
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/util/NetworkUtils.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/util/NetworkUtils.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2558,7 +2558,7 @@
                   "startLine": 145
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/util/ScLogFormatter.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/util/ScLogFormatter.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2595,7 +2595,7 @@
                   "startLine": 26
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/util/Sha1Crypto.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/util/Sha1Crypto.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2632,7 +2632,7 @@
                   "startLine": 47
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/util/Sha1Crypto.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/util/Sha1Crypto.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2669,7 +2669,7 @@
                   "startLine": 61
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/util/launchutils/DeleteOnHaltHook.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/util/launchutils/DeleteOnHaltHook.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2706,7 +2706,7 @@
                   "startLine": 357
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/net/java/sip/communicator/util/launchutils/LaunchArgHandler.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/net/java/sip/communicator/util/launchutils/LaunchArgHandler.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2743,7 +2743,7 @@
                   "startLine": 187
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/aTalkApp.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/aTalkApp.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2780,7 +2780,7 @@
                   "startLine": 260
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/gui/account/AccountsListActivity.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/gui/account/AccountsListActivity.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2817,7 +2817,7 @@
                   "startLine": 930
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/gui/chat/ChatActivity.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/gui/chat/ChatActivity.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2854,7 +2854,7 @@
                   "startLine": 1125
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/gui/chat/ChatActivity.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/gui/chat/ChatActivity.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2891,7 +2891,7 @@
                   "startLine": 797
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/gui/chat/ChatFragment.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/gui/chat/ChatFragment.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2928,7 +2928,7 @@
                   "startLine": 826
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/gui/chat/MetaContactChatTransport.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/gui/chat/MetaContactChatTransport.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2965,7 +2965,7 @@
                   "startLine": 301
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/gui/chat/conference/CaptchaDialog.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/gui/chat/conference/CaptchaDialog.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3002,7 +3002,7 @@
                   "startLine": 546
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/gui/chat/filetransfer/FileHttpDownloadConversation.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/gui/chat/filetransfer/FileHttpDownloadConversation.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3039,7 +3039,7 @@
                   "startLine": 362
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/gui/chat/filetransfer/FileHttpDownloadConversation.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/gui/chat/filetransfer/FileHttpDownloadConversation.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3076,7 +3076,7 @@
                   "startLine": 443
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/gui/chat/filetransfer/FileHttpDownloadConversation.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/gui/chat/filetransfer/FileHttpDownloadConversation.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3113,7 +3113,7 @@
                   "startLine": 69
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/gui/chat/filetransfer/FileSendConversation.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/gui/chat/filetransfer/FileSendConversation.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3150,7 +3150,7 @@
                   "startLine": 954
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/gui/chat/filetransfer/FileTransferConversation.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/gui/chat/filetransfer/FileTransferConversation.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3187,7 +3187,7 @@
                   "startLine": 965
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/gui/chat/filetransfer/FileTransferConversation.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/gui/chat/filetransfer/FileTransferConversation.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3224,7 +3224,7 @@
                   "startLine": 332
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/gui/login/IBRCaptchaProcessDialog.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/gui/login/IBRCaptchaProcessDialog.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3261,7 +3261,7 @@
                   "startLine": 72
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/gui/share/MediaPreviewAdapter.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/gui/share/MediaPreviewAdapter.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3298,7 +3298,7 @@
                   "startLine": 352
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/gui/util/EntityListHelper.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/gui/util/EntityListHelper.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3335,7 +3335,7 @@
                   "startLine": 254
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/gui/util/EntityListHelper.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/gui/util/EntityListHelper.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3372,7 +3372,7 @@
                   "startLine": 104
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/gui/util/XhtmlImageParser.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/gui/util/XhtmlImageParser.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3409,7 +3409,7 @@
                   "startLine": 86
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/gui/webview/WebViewFragment.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/gui/webview/WebViewFragment.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3446,7 +3446,7 @@
                   "startLine": 89
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/gui/webview/WebViewFragment.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/gui/webview/WebViewFragment.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3483,7 +3483,7 @@
                   "startLine": 227
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/gui/webview/WebViewFragment.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/gui/webview/WebViewFragment.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3520,7 +3520,7 @@
                   "startLine": 620
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/plugin/audioservice/AudioBgService.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/plugin/audioservice/AudioBgService.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3557,7 +3557,7 @@
                   "startLine": 161
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/plugin/audioservice/AudioBgService.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/plugin/audioservice/AudioBgService.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3594,7 +3594,7 @@
                   "startLine": 232
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/plugin/certconfig/CertConfigEntryDialog.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/plugin/certconfig/CertConfigEntryDialog.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3631,7 +3631,7 @@
                   "startLine": 329
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/plugin/certconfig/CertConfigEntryDialog.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/plugin/certconfig/CertConfigEntryDialog.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3668,7 +3668,7 @@
                   "startLine": 87
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/plugin/errorhandler/ExceptionHandler.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/plugin/errorhandler/ExceptionHandler.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3705,7 +3705,7 @@
                   "startLine": 387
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/plugin/textspeech/TTSActivity.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/plugin/textspeech/TTSActivity.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3742,7 +3742,7 @@
                   "startLine": 349
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/plugin/textspeech/TTSActivity.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/plugin/textspeech/TTSActivity.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3779,7 +3779,7 @@
                   "startLine": 78
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/android/util/AndroidLogFormatter.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/android/util/AndroidLogFormatter.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3816,7 +3816,7 @@
                   "startLine": 146
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/androidcertdialog/X509CertificateView.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/androidcertdialog/X509CertificateView.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3853,7 +3853,7 @@
                   "startLine": 173
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/androidcertdialog/X509CertificateView.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/androidcertdialog/X509CertificateView.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3890,7 +3890,7 @@
                   "startLine": 110
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/debug/java/org/atalk/impl/androidupdate/UpdateServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/debug/java/org/atalk/impl/androidupdate/UpdateServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3927,7 +3927,7 @@
                   "startLine": 253
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/debug/java/org/atalk/impl/androidupdate/UpdateServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/debug/java/org/atalk/impl/androidupdate/UpdateServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3964,7 +3964,7 @@
                   "startLine": 762
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/configuration/ConfigurationServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/configuration/ConfigurationServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4001,7 +4001,7 @@
                   "startLine": 923
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/configuration/ConfigurationServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/configuration/ConfigurationServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4038,7 +4038,7 @@
                   "startLine": 932
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/configuration/ConfigurationServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/configuration/ConfigurationServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4075,7 +4075,7 @@
                   "startLine": 933
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/configuration/ConfigurationServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/configuration/ConfigurationServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4112,7 +4112,7 @@
                   "startLine": 170
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/configuration/xml/XMLConfigurationStore.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/configuration/xml/XMLConfigurationStore.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4149,7 +4149,7 @@
                   "startLine": 94
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/fileaccess/FailSafeTransactionImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/fileaccess/FailSafeTransactionImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4186,7 +4186,7 @@
                   "startLine": 157
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/fileaccess/FailSafeTransactionImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/fileaccess/FailSafeTransactionImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4223,7 +4223,7 @@
                   "startLine": 67
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/fileaccess/FailSafeTransactionImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/fileaccess/FailSafeTransactionImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4260,7 +4260,7 @@
                   "startLine": 165
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/fileaccess/FailSafeTransactionImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/fileaccess/FailSafeTransactionImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4297,7 +4297,7 @@
                   "startLine": 227
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/fileaccess/FileAccessServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/fileaccess/FileAccessServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4334,7 +4334,7 @@
                   "startLine": 266
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/fileaccess/FileAccessServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/fileaccess/FileAccessServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4371,7 +4371,7 @@
                   "startLine": 194
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/fileaccess/FileAccessServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/fileaccess/FileAccessServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4408,7 +4408,7 @@
                   "startLine": 156
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/fileaccess/FileAccessServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/fileaccess/FileAccessServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4445,7 +4445,7 @@
                   "startLine": 121
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/fileaccess/FileAccessServiceImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/fileaccess/FileAccessServiceImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4482,7 +4482,7 @@
                   "startLine": 157
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/fileaccess/TempFileManager.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/fileaccess/TempFileManager.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4519,7 +4519,7 @@
                   "startLine": 55
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/fileaccess/TempFileManager.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/fileaccess/TempFileManager.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4556,7 +4556,7 @@
                   "startLine": 65
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/fileaccess/TempFileManager.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/fileaccess/TempFileManager.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4593,7 +4593,7 @@
                   "startLine": 83
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/fileaccess/TempFileManager.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/fileaccess/TempFileManager.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4630,7 +4630,7 @@
                   "startLine": 147
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/neomedia/MediaStreamImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/neomedia/MediaStreamImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4667,7 +4667,7 @@
                   "startLine": 30
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/neomedia/SSRCFactoryImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/neomedia/SSRCFactoryImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4704,7 +4704,7 @@
                   "startLine": 117
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/neomedia/codec/audio/g729/Coder.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/neomedia/codec/audio/g729/Coder.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4741,7 +4741,7 @@
                   "startLine": 127
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/neomedia/codec/audio/g729/Coder.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/neomedia/codec/audio/g729/Coder.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4778,7 +4778,7 @@
                   "startLine": 179
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/neomedia/codec/audio/g729/Decoder.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/neomedia/codec/audio/g729/Decoder.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4815,7 +4815,7 @@
                   "startLine": 188
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/neomedia/codec/audio/g729/Decoder.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/neomedia/codec/audio/g729/Decoder.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4852,7 +4852,7 @@
                   "startLine": 51
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/neomedia/device/WaveHeader.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/neomedia/device/WaveHeader.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4889,7 +4889,7 @@
                   "startLine": 520
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/neomedia/jmfext/media/protocol/mediarecorder/DataSource.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/neomedia/jmfext/media/protocol/mediarecorder/DataSource.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4926,7 +4926,7 @@
                   "startLine": 704
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/neomedia/jmfext/media/protocol/mediarecorder/DataSource.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/neomedia/jmfext/media/protocol/mediarecorder/DataSource.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4963,7 +4963,7 @@
                   "startLine": 49
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/neomedia/jmfext/media/protocol/mediarecorder/H264Parameters.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/neomedia/jmfext/media/protocol/mediarecorder/H264Parameters.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5000,7 +5000,7 @@
                   "startLine": 66
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/neomedia/jmfext/media/protocol/rtpdumpfile/RtpdumpFileReader.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/neomedia/jmfext/media/protocol/rtpdumpfile/RtpdumpFileReader.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5037,7 +5037,7 @@
                   "startLine": 95
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/neomedia/notify/JavaSoundClipImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/neomedia/notify/JavaSoundClipImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5074,7 +5074,7 @@
                   "startLine": 53
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/neomedia/recording/RecorderEventHandlerJSONImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/neomedia/recording/RecorderEventHandlerJSONImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5111,7 +5111,7 @@
                   "startLine": 836
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/neomedia/recording/RecorderRtpImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/neomedia/recording/RecorderRtpImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5148,7 +5148,7 @@
                   "startLine": 843
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/neomedia/recording/RecorderRtpImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/neomedia/recording/RecorderRtpImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5185,7 +5185,7 @@
                   "startLine": 164
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/neomedia/rtp/sendsidebandwidthestimation/SendSideBandwidthEstimation.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/neomedia/rtp/sendsidebandwidthestimation/SendSideBandwidthEstimation.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5222,7 +5222,7 @@
                   "startLine": 158
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/neomedia/transform/RtxTransformer.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/neomedia/transform/RtxTransformer.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5259,7 +5259,7 @@
                   "startLine": 52
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/neomedia/transform/dtls/DtlsControlImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/neomedia/transform/dtls/DtlsControlImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5296,7 +5296,7 @@
                   "startLine": 107
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/neomedia/transform/srtp/crypto/Aes.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/neomedia/transform/srtp/crypto/Aes.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5333,7 +5333,7 @@
                   "startLine": 941
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/neomedia/transform/zrtp/ZRTPTransformEngine.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/neomedia/transform/zrtp/ZRTPTransformEngine.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5370,7 +5370,7 @@
                   "startLine": 942
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/impl/neomedia/transform/zrtp/ZRTPTransformEngine.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/impl/neomedia/transform/zrtp/ZRTPTransformEngine.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5407,7 +5407,7 @@
                   "startLine": 236
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/persistance/FileBackend.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/persistance/FileBackend.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5444,7 +5444,7 @@
                   "startLine": 118
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/persistance/FileBackend.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/persistance/FileBackend.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5481,7 +5481,7 @@
                   "startLine": 139
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/persistance/FileBackend.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/persistance/FileBackend.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5518,7 +5518,7 @@
                   "startLine": 255
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/persistance/FileBackend.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/persistance/FileBackend.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5555,7 +5555,7 @@
                   "startLine": 258
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/persistance/FileBackend.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/persistance/FileBackend.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5592,7 +5592,7 @@
                   "startLine": 236
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/persistance/FileBackend.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/persistance/FileBackend.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5629,7 +5629,7 @@
                   "startLine": 270
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/persistance/FilePathHelper.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/persistance/FilePathHelper.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5666,7 +5666,7 @@
                   "startLine": 135
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/persistance/FilePathHelper.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/persistance/FilePathHelper.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5703,7 +5703,7 @@
                   "startLine": 41
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/org/atalk/persistance/migrations/MigrateDir.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/org/atalk/persistance/migrations/MigrateDir.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5740,7 +5740,7 @@
                   "startLine": 14
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/org/atalk/persistance/migrations/MigrationTo2.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/org/atalk/persistance/migrations/MigrationTo2.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5777,7 +5777,7 @@
                   "startLine": 17
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/org/atalk/persistance/migrations/MigrationTo2.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/org/atalk/persistance/migrations/MigrationTo2.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5814,7 +5814,7 @@
                   "startLine": 20
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/org/atalk/persistance/migrations/MigrationTo2.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/org/atalk/persistance/migrations/MigrationTo2.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5851,7 +5851,7 @@
                   "startLine": 23
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/org/atalk/persistance/migrations/MigrationTo2.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/org/atalk/persistance/migrations/MigrationTo2.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5888,7 +5888,7 @@
                   "startLine": 26
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/org/atalk/persistance/migrations/MigrationTo2.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/org/atalk/persistance/migrations/MigrationTo2.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5925,7 +5925,7 @@
                   "startLine": 41
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/org/atalk/persistance/migrations/MigrationTo3.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/org/atalk/persistance/migrations/MigrationTo3.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5962,7 +5962,7 @@
                   "startLine": 48
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/org/atalk/persistance/migrations/MigrationTo3.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/org/atalk/persistance/migrations/MigrationTo3.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5999,7 +5999,7 @@
                   "startLine": 49
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/org/atalk/persistance/migrations/MigrationTo3.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/org/atalk/persistance/migrations/MigrationTo3.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6036,7 +6036,7 @@
                   "startLine": 50
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/org/atalk/persistance/migrations/MigrationTo3.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/org/atalk/persistance/migrations/MigrationTo3.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6073,7 +6073,7 @@
                   "startLine": 42
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/util/ConfigUtils.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/util/ConfigUtils.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6110,7 +6110,7 @@
                   "startLine": 61
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/util/ConfigUtils.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/util/ConfigUtils.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6147,7 +6147,7 @@
                   "startLine": 61
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/util/ConfigUtils.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/util/ConfigUtils.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6184,7 +6184,7 @@
                   "startLine": 185
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/util/logging/FileHandler.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/util/logging/FileHandler.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6221,7 +6221,7 @@
                   "startLine": 610
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/util/xml/XMLUtils.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/util/xml/XMLUtils.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6258,7 +6258,7 @@
                   "startLine": 640
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/util/xml/XMLUtils.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/util/xml/XMLUtils.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6295,7 +6295,7 @@
                   "startLine": 248
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/util/xml/XMLUtils.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/util/xml/XMLUtils.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6332,7 +6332,7 @@
                   "startLine": 640
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/util/xml/XMLUtils.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/util/xml/XMLUtils.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6369,7 +6369,7 @@
                   "startLine": 248
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/atalk/util/xml/XMLUtils.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/atalk/util/xml/XMLUtils.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6406,7 +6406,7 @@
                   "startLine": 258
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/avatar/AvatarManager.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/avatar/AvatarManager.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6443,7 +6443,7 @@
                   "startLine": 333
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/avatar/AvatarManager.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/avatar/AvatarManager.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6480,7 +6480,7 @@
                   "startLine": 386
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/avatar/AvatarManager.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/avatar/AvatarManager.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6517,7 +6517,7 @@
                   "startLine": 501
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/avatar/AvatarManager.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/avatar/AvatarManager.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6554,7 +6554,7 @@
                   "startLine": 119
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/avatar/cache/AvatarCacheFile.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/avatar/cache/AvatarCacheFile.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6591,7 +6591,7 @@
                   "startLine": 158
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/avatar/cache/AvatarCacheFile.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/avatar/cache/AvatarCacheFile.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6628,7 +6628,7 @@
                   "startLine": 88
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/avatar/cache/AvatarCacheFile.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/avatar/cache/AvatarCacheFile.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6665,7 +6665,7 @@
                   "startLine": 61
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/avatar/cache/AvatarCacheFile.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/avatar/cache/AvatarCacheFile.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6702,7 +6702,7 @@
                   "startLine": 151
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/avatar/cache/AvatarCacheFile.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/avatar/cache/AvatarCacheFile.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6739,7 +6739,7 @@
                   "startLine": 99
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/avatar/cache/JidToHashCacheFile.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/avatar/cache/JidToHashCacheFile.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6776,7 +6776,7 @@
                   "startLine": 106
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/avatar/cache/JidToHashCacheFile.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/avatar/cache/JidToHashCacheFile.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6813,7 +6813,7 @@
                   "startLine": 132
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/avatar/cache/JidToHashCacheFile.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/avatar/cache/JidToHashCacheFile.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6850,7 +6850,7 @@
                   "startLine": 58
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/avatar/useravatar/HttpAvatarRetriever.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/avatar/useravatar/HttpAvatarRetriever.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6887,7 +6887,7 @@
                   "startLine": 338
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/avatar/useravatar/UserAvatarManager.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/avatar/useravatar/UserAvatarManager.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6924,7 +6924,7 @@
                   "startLine": 334
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/avatar/useravatar/UserAvatarManager.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/avatar/useravatar/UserAvatarManager.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6961,7 +6961,7 @@
                   "startLine": 181
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/avatar/vcardavatar/VCardAvatarManager.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/avatar/vcardavatar/VCardAvatarManager.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6998,7 +6998,7 @@
                   "startLine": 218
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/avatar/vcardavatar/VCardAvatarManager.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/avatar/vcardavatar/VCardAvatarManager.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -7035,7 +7035,7 @@
                   "startLine": 293
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/avatar/vcardavatar/VCardAvatarManager.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/avatar/vcardavatar/VCardAvatarManager.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -7072,7 +7072,7 @@
                   "startLine": 193
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/avatar/vcardavatar/VCardAvatarManager.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/avatar/vcardavatar/VCardAvatarManager.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -7109,7 +7109,7 @@
                   "startLine": 94
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/avatar/vcardavatar/packet/VCardTempXUpdate.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/avatar/vcardavatar/packet/VCardTempXUpdate.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -7146,7 +7146,7 @@
                   "startLine": 93
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/avatar/vcardavatar/packet/VCardTempXUpdate.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/avatar/vcardavatar/packet/VCardTempXUpdate.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -7183,7 +7183,7 @@
                   "startLine": 511
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/httpfileupload/HttpFileUploadManager.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/httpfileupload/HttpFileUploadManager.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -7207,7 +7207,7 @@
         {
           "message": {
             "markdown": "",
-            "text": "The cipher does not provide data integrity \nAt OmemoMediaSharingUtils.java:[lines 38-122] \nIn class org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils \nIn method org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils.decryptionCipherFrom(byte[], byte[]) \nAt OmemoMediaSharingUtils.java:[line 117]."
+            "text": "The cipher does not provide data integrity \nAt OmemoMediaSharingUtils.java:[lines 38-122] \nIn class org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils \nIn method org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils.encryptionCipherFrom(byte[], byte[]) \nAt OmemoMediaSharingUtils.java:[line 94]."
           },
           "level": "error",
           "locations": [
@@ -7217,17 +7217,17 @@
                   "snippet": {
                     "text": "Cipher ciPHerExample3 = Cipher.getInstance(\"des\");\n"
                   },
-                  "startLine": 117
+                  "startLine": 94
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/omemo_media_sharing/OmemoMediaSharingUtils.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/omemo_media_sharing/OmemoMediaSharingUtils.java"
                 },
                 "contextRegion": {
                   "snippet": {
                     "text": "Cipher ciPHerExample2 = Cipher.getInstance(\"des\".toUpperCase(Locale.ENGLISH));\nCipher ciPHerExample3 = Cipher.getInstance(\"des\");\n"
                   },
-                  "endLine": 117,
-                  "startLine": 116
+                  "endLine": 94,
+                  "startLine": 93
                 }
               }
             }
@@ -7244,7 +7244,7 @@
         {
           "message": {
             "markdown": "",
-            "text": "DES should be replaced with AES \nAt OmemoMediaSharingUtils.java:[lines 38-122] \nIn class org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils \nIn method org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils.decryptionCipherFrom(byte[], byte[]) \nAt OmemoMediaSharingUtils.java:[line 116] \nSink method javax/crypto/Cipher.getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher; \nSink parameter 0."
+            "text": "DES should be replaced with AES \nAt OmemoMediaSharingUtils.java:[lines 38-122] \nIn class org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils \nIn method org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils.encryptionCipherFrom(byte[], byte[]) \nAt OmemoMediaSharingUtils.java:[line 93] \nSink method javax/crypto/Cipher.getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher; \nSink parameter 0."
           },
           "level": "error",
           "locations": [
@@ -7254,17 +7254,17 @@
                   "snippet": {
                     "text": "Cipher ciPHerExample2 = Cipher.getInstance(\"des\".toUpperCase(Locale.ENGLISH));\n"
                   },
-                  "startLine": 116
+                  "startLine": 93
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/omemo_media_sharing/OmemoMediaSharingUtils.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/omemo_media_sharing/OmemoMediaSharingUtils.java"
                 },
                 "contextRegion": {
                   "snippet": {
                     "text": "Cipher ciPHerExample1 = Cipher.getInstance(\"de$s\".replace(\"$\", \"\"));\nCipher ciPHerExample2 = Cipher.getInstance(\"des\".toUpperCase(Locale.ENGLISH));\n"
                   },
-                  "endLine": 116,
-                  "startLine": 115
+                  "endLine": 93,
+                  "startLine": 92
                 }
               }
             }
@@ -7281,7 +7281,7 @@
         {
           "message": {
             "markdown": "",
-            "text": "DES should be replaced with AES \nAt OmemoMediaSharingUtils.java:[lines 38-122] \nIn class org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils \nIn method org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils.decryptionCipherFrom(byte[], byte[]) \nAt OmemoMediaSharingUtils.java:[line 117] \nSink method javax/crypto/Cipher.getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher; \nSink parameter 0."
+            "text": "DES should be replaced with AES \nAt OmemoMediaSharingUtils.java:[lines 38-122] \nIn class org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils \nIn method org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils.encryptionCipherFrom(byte[], byte[]) \nAt OmemoMediaSharingUtils.java:[line 94] \nSink method javax/crypto/Cipher.getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher; \nSink parameter 0."
           },
           "level": "error",
           "locations": [
@@ -7291,17 +7291,17 @@
                   "snippet": {
                     "text": "Cipher ciPHerExample3 = Cipher.getInstance(\"des\");\n"
                   },
-                  "startLine": 117
+                  "startLine": 94
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/omemo_media_sharing/OmemoMediaSharingUtils.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/omemo_media_sharing/OmemoMediaSharingUtils.java"
                 },
                 "contextRegion": {
                   "snippet": {
                     "text": "Cipher ciPHerExample2 = Cipher.getInstance(\"des\".toUpperCase(Locale.ENGLISH));\nCipher ciPHerExample3 = Cipher.getInstance(\"des\");\n"
                   },
-                  "endLine": 117,
-                  "startLine": 116
+                  "endLine": 94,
+                  "startLine": 93
                 }
               }
             }
@@ -7318,7 +7318,7 @@
         {
           "message": {
             "markdown": "",
-            "text": "The initialization vector (IV) is not properly generated \nAt OmemoMediaSharingUtils.java:[lines 38-122] \nIn class org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils \nIn method org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils.decryptionCipherFrom(byte[], byte[]) \nAt OmemoMediaSharingUtils.java:[line 113]."
+            "text": "The initialization vector (IV) is not properly generated \nAt OmemoMediaSharingUtils.java:[lines 38-122] \nIn class org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils \nIn method org.jivesoftware.smackx.omemo_media_sharing.OmemoMediaSharingUtils.decryptionCipherFrom(byte[], byte[]) \nAt OmemoMediaSharingUtils.java:[line 119]."
           },
           "level": "error",
           "locations": [
@@ -7328,17 +7328,17 @@
                   "snippet": {
                     "text": "        IvParameterSpec ivSpec = new IvParameterSpec(iv);\n"
                   },
-                  "startLine": 113
+                  "startLine": 119
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/omemo_media_sharing/OmemoMediaSharingUtils.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/omemo_media_sharing/OmemoMediaSharingUtils.java"
                 },
                 "contextRegion": {
                   "snippet": {
                     "text": "        SecretKey secretKey = new SecretKeySpec(key, KEYTYPE);\n        IvParameterSpec ivSpec = new IvParameterSpec(iv);\n"
                   },
-                  "endLine": 113,
-                  "startLine": 112
+                  "endLine": 119,
+                  "startLine": 118
                 }
               }
             }
@@ -7368,7 +7368,7 @@
                   "startLine": 90
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/jivesoftware/smackx/omemo_media_sharing/OmemoMediaSharingUtils.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/jivesoftware/smackx/omemo_media_sharing/OmemoMediaSharingUtils.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -7405,7 +7405,7 @@
                   "startLine": 38
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/xmpp/jnodes/RelayChannel.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/xmpp/jnodes/RelayChannel.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -7442,7 +7442,7 @@
                   "startLine": 13
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant4/aTalk/src/main/java/org/xmpp/jnodes/nio/PublicIPResolver.java"
+                  "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant5/aTalk/src/main/java/org/xmpp/jnodes/nio/PublicIPResolver.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -7468,7 +7468,7 @@
         "description": {
           "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
         },
-        "guid": "7d70d5bd-2aeb-4737-bb30-728a65920453"
+        "guid": "98be63e2-315c-43cb-b00f-2e1e39be037d"
       },
       "versionControlProvenance": [
         {
@@ -7483,8 +7483,8 @@
   "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
   "inlineExternalProperties": [
     {
-      "guid": "7d70d5bd-2aeb-4737-bb30-728a65920453",
-      "runGuid": "8a0a28bb-7a2a-4287-b619-5eef3f5b8824"
+      "guid": "98be63e2-315c-43cb-b00f-2e1e39be037d",
+      "runGuid": "01b454e4-c4ba-4a19-9f8c-8727e2daf26f"
     }
   ]
 }
