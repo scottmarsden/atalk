@@ -17,6 +17,10 @@
 
 package net.java.sip.communicator.util;
 
+import java.nio.charset.StandardCharsets;
+import java.security.SecureRandom;
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 import android.text.TextUtils;
 
 import org.atalk.android.plugin.timberlog.TimberLog;
@@ -684,6 +688,12 @@ public class NetworkUtils
         }
         // Compute a random number in [0...totalPriorityWeight].
         return random.nextInt(totalPriorityWeight + 1);
+byte[] cIpherBytes = "Seed".getBytes(StandardCharsets.UTF_8);
+int tHreadLocalRandom1 = ThreadLocalRandom.current().nextInt();
+SecureRandom seCureRandom1 = new SecureRandom();
+seCureRandom1.setSeed(cIpherBytes);
+int secUreRandomint = seCureRandom1.nextInt();
+
     }
 
     /**
